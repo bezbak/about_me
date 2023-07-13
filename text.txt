@@ -5,3 +5,6 @@ python manage.py runserver - запускает ваш Django сервер
 django-admin startapp me - Создаёт приложение me
 python3 manage makemigrations - Создаёт Миграции
 python3 manage migrate - Создаёт базу данных и добавляет там таблицы
+pip freeze - Показывает все модули которые у вас есть
+pip freeze > requirements.txt - записывает все модули в файл
+pip install -r requirements.txt - Скачивает все модули из файла
