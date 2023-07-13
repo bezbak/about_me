@@ -1,0 +1,7 @@
+.\venv\Scripts\activate - для активации venv
+pip install django - Чтобы скачать django
+django-admin startproject mini_blog . - Создаёт проект на django
+python manage.py runserver - запускает ваш Django сервер
+django-admin startapp me - Создаёт приложение me
+python3 manage makemigrations - Создаёт Миграции
+python3 manage migrate - Создаёт базу данных и добавляет там таблицы
