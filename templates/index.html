@@ -20,8 +20,26 @@
     <i>Cursive text</i>
     <a href="{%url '2' %}">link</a>
     <img src="{%static 'images/img1.jpeg'%}" alt="dafesfa"> -->
-
-
+    {%for i in people%}
+        <div>
+            <h1>{{i.full_name}}</h1>
+            <p>
+                Дата рождение: {{i.date_of_birthday}}
+                О себе: {{i.description}}
+            </p>
+        </div>
+    {%endfor%}
         
 </body>
 </html>
+
+<!-- 
+    !Задание 
+    ! I создать Класс Student c полями:
+    ! 1 Имя
+    ! 2 Направление
+    ! 3 Какой месяц
+    !II Зарегестрировать класс в admin.py
+    !III Добавить 5 учеников через админ панель
+    !IV Вывести этих учеников в index.html
+ -->
